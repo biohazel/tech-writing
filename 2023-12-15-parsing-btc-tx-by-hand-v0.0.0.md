@@ -1,6 +1,6 @@
 # Parsing a Bitcoin Transaction By Hand
 
-> *This tutorial follows the lessons taught by [*Base58 Bitcoin Developer Basics: Transactions, Scripts + SegWit*](https://www.udemy.com/course/base58-bitcoin-transactions-one/)
+> *This tutorial follows the lessons taught by [Base58 Bitcoin Developer Basics: Transactions, Scripts + SegWit](https://www.udemy.com/course/base58-bitcoin-transactions-one/)*
 
 
 To parse a Bitcoin transaction, it is a pre-requisite to understand encoding, decoding, and endianess. Hence, this analysis will assume the knowledge of calculating a hex coded number back to integer, and a sequence of bytes organized from little endian to big endian. 
@@ -9,7 +9,7 @@ Here is a high-level illustration of the field types in a Bitcoin transaction.
 
 ![Field Types](https://github.com/hazelblitz/tech-writing-illustrations/blob/master/parsing-btc-tx-by-hand.png?raw=true)
 
-## First Ever Bitcoin Transaction: Satoshi Nakamoto Sent Hall Finney 10 BTC
+### First Ever Bitcoin Transaction: Satoshi Nakamoto Sent Hall Finney 10 BTC
 
 You can look up the transaction on blockstream.info using the txid below. 
 
@@ -25,7 +25,7 @@ I added spaces in between fields of the raw_hex as form of pre-parsing, but belo
 
 raw_hex = '01000000 01 c997a5e56e104102fa209c6a852dd90660a20b2d9c352423edce25857fcd3704 00000000 48 47304402204e45e16932b8af514961a1d3a1a25fdf3f4f7732e9d624c6c61548ab5fb8cd410220181522ec8eca07de4860a4acdd12909d831cc56cbbac4622082221a8768d1d0901 ffffffff 02 00ca9a3b00000000 43 4104ae1a62fe09c5f51b13905f07f06b99a2f7159b2225f374cd378d71302fa28414e7aab37397f554a7df5f142c21c1b7303b8a0626f1baded5c72a704f7e6cd84cac 00286bee00000000 43 410411db93e1dcdb8a016b49840f8c53bc1eb68a382e97b1482ecad7b148a6909a5cb2e0eaddfb84ccf9744464f82e160bfa9b8b64f9d4c03f999b8643f656b412a3ac 00000000'
 
-## Decoding 
+## Decoding Each Field 
 
 ### Version
 
