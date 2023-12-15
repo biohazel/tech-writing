@@ -48,13 +48,13 @@ The second field represents the count of inputs. It has 1-byte and its format is
 
 CompactSize fields have some tricky rules. First, you'll always parse the first byte, 2 hexadecimal characters, and convert from hex to int, straight up. 
 
-If the value is less than 253, you don't need to worry about endianess because the value is within a single byte. Just use the value you got from the direct conversion from hex to integer.
+* If the value is **less than 253**, you don't need to worry about endianess because the value is within a single byte. Just use the value you got from the direct conversion from hex to integer.
 
-If the value is 253, the input count will be the next 2 bytes, 4 hexadecimal characters. Remember that at this point you MUST convert from little endian to big endian before converting from hex to integer. 
+* If the value **is 253**, the input count will be the next 2 bytes, 4 hexadecimal characters. Remember that at this point you MUST convert from little endian to big endian before converting from hex to integer. 
 
-If the number is 254, the input count will be the next 4 bytes, 8 hexadecimal characters. Convert from little endian to big endian before converting hex to integer. 
+* If the number **is 254**, the input count will be the next 4 bytes, 8 hexadecimal characters. Convert from little endian to big endian before converting hex to integer. 
 
-If the number is 255, the input count will be the next 8 bytes, 16 hexadecimal characters. Convert from little endian to big endian before converting hex to integer. 
+* If the number **is 255**, the input count will be the next 8 bytes, 16 hexadecimal characters. Convert from little endian to big endian before converting hex to integer. 
 
 "input_count", 1 byte at first, 2 hex characters: 01 --> 1
 
