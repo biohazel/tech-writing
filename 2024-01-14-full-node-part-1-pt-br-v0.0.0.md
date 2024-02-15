@@ -152,11 +152,11 @@ Como eu já tive um setup de servidor nesse IP no passado, ele está identifican
 
 Então precisamos remover a chave de acesso antiga e criar uma nova. Com a chave removida, só tentar fazer o login novamente. 
 
-```ssh-keygen -f "/home/ubuntu/.ssh/known_hosts" -R "192.168.15.55````
+```ssh-keygen -f "/home/ubuntu/.ssh/known_hosts" -R "192.168.15.55```
 
 ![ubuntu-3](https://github.com/biohazel/tech-writing-illustrations/blob/master/ubuntu-3.png?raw=true) 
 
-Agora é o momento de preparar o SSD. formatar, e montar. Depois adicionar o mount point a /etc/fstab para que ele persista por vários reboots. 
+Agora é o momento de preparar o SSD, formatar, e montar. Depois adicionar o mount point a /etc/fstab para que ele persista por vários reboots. 
 
 Comece com o comando ```lsblk``` 
 
@@ -184,7 +184,7 @@ Use a UUID (própria do seu sistema) para adicionar uma linha semelhante a esta 
 
 ```sudo vim /etc/fstab```
 
-Agora adicione essa linha abaixo e a salve. 
+Dentro do Vim, aperte a letra i para entrar no modo INSERT, em que você consegue escrever. Agora adicione essa linha abaixo.
 
 ```UUID=seu-uuid-aqui /mnt/umbrel ext4 defaults 0 2```
 
@@ -192,9 +192,11 @@ Agora adicione essa linha abaixo e a salve.
 
 ![ubuntu-7](https://github.com/biohazel/tech-writing-illustrations/blob/master/ubuntu-7.png?raw=true) 
 
+Para salvar, clique em Esc, depois ```:w``` e ```:q``` na sequência. 
+
 Agora vamos usar o comando ```sudo mount -a``` para montar todas as partições listadas no /etc/fstab que ainda não estão montadas.
 
-Para garantir que não houve erros na sua entrada do /etc/fstab, vamos verificar o lsblk.
+Para garantir que não houve erros na sua entrada do /etc/fstab, vamos verificar o ```lsblk```.
 
 ![lsbk-final](https://github.com/biohazel/tech-writing-illustrations/blob/master/lsblk-final.png?raw=true) 
 
@@ -216,9 +218,9 @@ E voilá!
 
 ![ubuntu-9](https://github.com/biohazel/tech-writing-illustrations/blob/master/ubuntu-9.png?raw=true) 
 
-Agora vem o momento mágico. Coloca a musiquinha Umbrella da Ember Island para tocar e digite o nome do seu servidor.local no seu navegador. No caso, o meu é: 
+Agora vem o momento mágico. Coloca a musiquinha [Umbrella da Ember Island](https://open.spotify.com/intl-pt/album/14qmH55ZpVHTRn67ONh5J6) para tocar e digite o nome do seu servidor.local no seu navegador. No caso, o meu é: 
 
-scalar.local
+```scalar.local```
 
 ![umbrel-1](https://github.com/biohazel/tech-writing-illustrations/blob/master/umbrel-1.png?raw=true) 
 
@@ -228,7 +230,7 @@ Agora preencha com um nome e senha.
 
 ![umbrel-3](https://github.com/biohazel/tech-writing-illustrations/blob/master/umbrel-3.png?raw=true) 
 
-Agora vamos escolher nosso primeiro aplicativo, o Bitcoin Core. Precisamos dele como pré-requisito para instalar o protocolo Lightning por cima e o próprio BTCPay Server depois. 
+Vamos escolher nosso primeiro aplicativo, o Bitcoin Core. Precisamos dele como pré-requisito para instalar o protocolo Lightning por cima e o próprio BTCPay Server depois. 
 
 ![umbrel-4](https://github.com/biohazel/tech-writing-illustrations/blob/master/umbrel-4.png?raw=true) 
 
@@ -237,6 +239,15 @@ Agora vamos escolher nosso primeiro aplicativo, o Bitcoin Core. Precisamos dele 
 ![umbrel-6](https://github.com/biohazel/tech-writing-illustrations/blob/master/umbrel-6.png?raw=true) 
 
 Agora vamos esperar o IBD, download inicial da blockchain do Bitcoin. Com esse processador, deve demorar umas 15 horas. Mas vamos contar. Essa foto de quando comecei a baixar o Bitcoin Core 26.0.0 foi tirada em 14 de Fevereiro de 2024 às 7:06PM. Assim que terminar de baixar, daremos continuidade à parte 2 deste artigo: instalando um node Lightning, abrindo canais, e gerenciando eles remotamente via Zeus. Uma palavra de adoração à Zeus que me ajudou a fechar meus canais e recuperar meus fundos quando eu quebrei meu node antigo fuçando demais. 
+
+Lembrando que nesse repositório tem tradução feita com 💖 e ✨ de [Mastering the Lightning Network](https://github.com/biohazel/lnbook-pt-br).
+
+Parabéns por ter chegado até aqui! Aproveite sua soberania. ⚡️
+
+
+
+
+
 
 
 
