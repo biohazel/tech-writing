@@ -36,7 +36,7 @@ Uma imagem iso é um arquivo que contém uma cópia exata de um sistema de arqui
 
 Gravar uma imagem iso em um flash drive vai além de simplesmente copiar arquivos. É necessário escrever a imagem de forma que o flash drive seja inicializável. Isso significa configurar o flash drive de modo que o computador possa iniciar ou bootar a partir dele e acessar o instalador do sistema operacional. 
 
-Vamos baixar o Ubuntu Server. Acesse o site oficial e baixe a versão LST (Long Term Support).
+Vamos baixar o Ubuntu Server. Acesse o site oficial e baixe a versão LTS (Long Term Support).
 
 ![ubuntu-server-software](https://github.com/biohazel/tech-writing-illustrations/blob/master/ubuntu-server-software.jpg?raw=true)
 
@@ -130,7 +130,7 @@ Aqui você pode retirar seu flash drive. Eu retirei e mesmo assim ele me levou p
 
 Prontinho! Ubuntu Server instalado e pronto para ser gerenciado remotamente. 
 
-Vamos fazer o gerenciamento e a instalação do Umbrel à distância. Sei que fiz a parte do Balena Etcher no Mac mas agora vou operar o restante das configurações do node de uma máquina Linux. 
+Vamos fazer o gerenciamento e a instalação do Umbrel a distância. Sei que fiz a parte do Balena Etcher no Mac mas agora vou operar o restante das configurações do node de uma máquina Linux. 
 
 Assumimos que você já esteja com o cabo de rede ligado. Vamos descobrir qual o endereço de IP da sua máquina. É o momento de olhar embaixo do seu roteador o endereço de IP dele próprio e suas credenciais de acesso. Dentro do sistema do roteador vamos descobrir o IP do seu nó. Basta digitar o IP do seu roteador em algum navegador de internet e seguir as instruções de login. Olha como é fácil identificar, pois o nome que demos ao nó nas primeiras credenciais de acesso é o que aparece listado dentre os IPs em atividade nessa rede. 
 
@@ -204,7 +204,7 @@ Agora vamos nos localizar bem onde o disco está montado para instalar o Umbrel.
 
 ```cd /mnt/umbrel```
 
-Dê uma olhada no site da Umbrel quais as orientações atuais para instalação em Linux. Tem versão nova do OS deles para sair em Março!
+Dê uma olhada no site da Umbrel quais as orientações atuais para instalação em Linux. Tem versão nova do OS deles para sair em março!
 
 ![umbrel-0](https://github.com/biohazel/tech-writing-illustrations/blob/master/umbrel-0.png?raw=true) 
 
