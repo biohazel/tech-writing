@@ -62,7 +62,9 @@ Let's make it happen. This is my setup. Since I have this spare TV in the room w
 
 Notice that I also have an uninterruptible power supply (UPS). Something important when managing a Lightning node is ensuring uptime health, the least possible offline time during the life of the channels. If you live in a place with many power spikes, it's good to have a UPS and connect your internet and your node to it.
 
-Insert the flash drive with Ubuntu Server into the mini PC and turn it on. Press Del—depending on the machine, it could be another key—to enter the BIOS. Mine was already configured to read the flash drive unit first.
+Insert the flash drive with Ubuntu Server into the mini PC and turn it on. Press Del—depending on the machine it could be another key—to enter the BIOS. Mine was already configured to read from the flash drive first.
+
+You need to point Boot Option #1 to your USB drive where the Ubuntu Server ISO is located. This ensures that, upon booting, the system will go through it first and follow the installation instructions of this Operating System.
 
 ![ubuntu-server-1](https://github.com/biohazel/tech-writing-illustrations/blob/master/ubuntu-server-1.jpg?raw=true)
 
@@ -233,6 +235,8 @@ Now fill in with a username and password.
 Let's choose our first application, Bitcoin Core. We need it as a prerequisite to install the Lightning protocol on top and the BTCPay Server afterwards.
 
 ![umbrel-4](https://github.com/biohazel/tech-writing-illustrations/blob/master/umbrel-4.png?raw=true) 
+
+Now, click install. And there we go!
 
 ![umbrel-5](https://github.com/biohazel/tech-writing-illustrations/blob/master/umbrel-5.png?raw=true) 
 

@@ -236,11 +236,13 @@ Vamos escolher nosso primeiro aplicativo, o Bitcoin Core. Precisamos dele como p
 
 ![umbrel-4](https://github.com/biohazel/tech-writing-illustrations/blob/master/umbrel-4.png?raw=true) 
 
+Agora, clique em instalar. E pronto!
+
 ![umbrel-5](https://github.com/biohazel/tech-writing-illustrations/blob/master/umbrel-5.png?raw=true) 
 
 ![umbrel-6](https://github.com/biohazel/tech-writing-illustrations/blob/master/umbrel-6.png?raw=true) 
 
-Agora vamos esperar o IBD, download inicial da blockchain do Bitcoin. Com esse processador, deve demorar umas 15 horas. Mas vamos contar. Essa foto de quando comecei a baixar o Bitcoin Core 26.0.0 foi tirada em 14 de Fevereiro de 2024 às 7:06PM. Assim que terminar de baixar, daremos continuidade à parte 2 deste artigo: instalando um node Lightning, abrindo canais, e gerenciando eles remotamente via Zeus. Uma palavra de adoração à Zeus que me ajudou a fechar meus canais e recuperar meus fundos quando eu quebrei meu node antigo fuçando demais. 
+Este é o momento de esperar o IBD, download inicial da blockchain do Bitcoin. Com esse processador, deve demorar umas 15 horas. Mas vamos contar. Essa foto de quando comecei a baixar o Bitcoin Core 26.0.0 foi tirada em 14 de Fevereiro de 2024 às 7:06PM. Assim que terminar de baixar, daremos continuidade à parte 2 deste artigo: instalando um node Lightning, abrindo canais, e gerenciando eles remotamente via Zeus. Uma palavra de adoração à Zeus que me ajudou a fechar meus canais e recuperar meus fundos quando eu quebrei meu node antigo fuçando demais. 
 
 Lembrando que nesse repositório tem tradução feita com 💖 e ✨ de [Mastering the Lightning Network](https://github.com/biohazel/lnbook-pt-br).
 
