@@ -10,7 +10,7 @@ Uma das etapas avançadas de entendimento e uso deste sistema é a criação e g
 
 Neste primeiro artigo vou compartilhar com vocês uma experiência da vida real sobre como criar e manter um nó completo de Bitcoin. No segundo artigo, vamos aprender a fazer transações Lightning conversando diretamente com seu node e seus canais, e no terceiro artigo vamos chegar ao ponto de usá-lo para receber pagamentos por algum site na internet com BTCPay Server. 
 
-Tive algumas experiências montando e rodando nodes, com diferentes níveis de sucesso. Se tem um conselho que eu queria que tivessem me dado mais firmemente no passado, é fique longe das Raspberry Pis. É um hardware subpar. Demora quase 5 dias o Initial Block Download do Bitcoin, ou seja, aquele primeiro download e indexação de todo histórido da blockchain do Bitcoin desde 2009. Se você já tem a vida ocupada, não gaste tempo e dinhieor com isso. Não tem como ficarmos esperando muito dela. 
+Tive algumas experiências montando e rodando nodes, com diferentes níveis de sucesso. Se tem um conselho que eu queria que tivessem me dado mais firmemente no passado, é fique longe das Raspberry Pis. É um hardware subpar. Demora quase 5 dias o Initial Block Download do Bitcoin, ou seja, aquele primeiro download e indexação de todo histórido da blockchain do Bitcoin desde 2009. Se você já tem a vida ocupada, não gaste tempo e dinheiro com isso. Não tem como ficarmos esperando muito dela. 
 
 Hoje, se eu estivesse sem tempo mas quisesse levantar um node mesmo assim, eu compraria direto no site da Umbrel. No momento ela parece estar valendo a pena, só não sei a situação dos impostos sobre esse valor. 
 
