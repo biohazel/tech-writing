@@ -30,11 +30,11 @@ Também comprei um SSD de 2T, abri e instalei nele. Precisa daquelas chaves-de-f
 
 ![beelink-ssd](https://github.com/biohazel/tech-writing-illustrations/blob/master/beelink-ssd.jpg?raw=true)
 
-Para começar com a parte do software, precisamos preparar um flash drive com o sistema operacional que vamos usar para instalar o Umbrel, que será o Ubuntu Server. Vamos até o site da Ubuntu e baixar uma imagem iso para gravar no flash drive. 
+Para começar com a parte do software, precisamos preparar um flash drive com o sistema operacional que vamos usar para instalar o Umbrel, que será o Ubuntu Server. Vamos até o site da Ubuntu e baixar uma imagem ISO para gravar no flash drive. 
 
-Uma imagem iso é um arquivo que contém uma cópia exata de um sistema de arquivos. No contexto do Ubuntu Server, a iso contém tudo necessário para instalar e executar o sistema operacional, preservando a estrutura e os arquivos exatamente como devem ser no disco ou flash drive.
+Uma imagem ISO é um arquivo que contém uma cópia exata de um sistema de arquivos. No contexto do Ubuntu Server, a ISO contém tudo necessário para instalar e executar o sistema operacional, preservando a estrutura e os arquivos exatamente como devem ser no disco ou flash drive.
 
-Gravar uma imagem iso em um flash drive vai além de simplesmente copiar arquivos. É necessário escrever a imagem de forma que o flash drive seja inicializável. Isso significa configurar o flash drive de modo que o computador possa iniciar ou bootar a partir dele e acessar o instalador do sistema operacional. 
+Gravar uma imagem ISO em um flash drive vai além de simplesmente copiar arquivos. É necessário escrever a imagem de forma que o flash drive seja inicializável. Isso significa configurar o flash drive de modo que o computador possa iniciar ou bootar a partir dele e acessar o instalador do sistema operacional. 
 
 Vamos baixar o Ubuntu Server. Acesse o site oficial e baixe a versão LTS (Long Term Support).
 
@@ -46,7 +46,7 @@ Baixe e instale o Balena Etcher.
 
 ![balena-etcher-1](https://github.com/biohazel/tech-writing-illustrations/blob/master/balena-etcher-1.jpg?raw=true)
 
-Agora insira o flash drive e com o Balena Etcher, copie a imagem iso para o flash drive. 
+Agora insira o flash drive e com o Balena Etcher, copie a imagem ISO para o flash drive. 
 
 ![balena-etcher-2](https://github.com/biohazel/tech-writing-illustrations/blob/master/balena-etcher-2.jpg?raw=true)
 ![balena-etcher-3](https://github.com/biohazel/tech-writing-illustrations/blob/master/balena-etcher-3.jpg?raw=true)
@@ -63,6 +63,8 @@ Vamos fazer isso acontecer. Esse é meu setup. Como tenho essa TV sobrando no qu
 Veja que tenho um nobreak também. Algo importante quando se gerencia um nó Lightning é garantir uma saúde de uptime, um mínimo tempo possível offline durante a vida dos canais. Se você mora em um local com muitos picos de energia, é legal ter um nobreak e ligar sua internet e seu node nele. 
 
 Insira o flash drive com Ubuntu Server no mini PC e ligue-o. Aperte Del—dependendo da máquina pode ser outra tecla—para entrarmos na BIOS. A minha já estava configurada para ler a unidade de flash drive primeiro. 
+
+Você precisa apontar o Boot Option #1 para o seu drive USB onde está a ISO do Ubuntu Server. Isso garante que, ao inicializar, o sistema vai passar por ele primeiro e seguir as instruções de instalação deste Sistema Operacional. 
 
 ![ubuntu-server-1](https://github.com/biohazel/tech-writing-illustrations/blob/master/ubuntu-server-1.jpg?raw=true)
 
