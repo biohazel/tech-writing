@@ -100,9 +100,11 @@ Aqui nós vamos escolher Continue.
 
 ![ubuntu-server-12](https://github.com/biohazel/tech-writing-illustrations/blob/master/ubuntu-server-12.jpg?raw=true) 
 
-Hora de setar as credenciais do seu nó. Eu faço o mais simples possível para lembrar depois, mas lembre de anotar isso aqui muito bem. 
+Hora de setar as credenciais do seu nó. O nome que você escolher em ```Your server'/s name``` é o hostname que vai aparecer ligado ao IP dele na rede interna. 
 
-![ubuntu-server-13](https://github.com/biohazel/tech-writing-illustrations/blob/master/ubuntu-server-13.jpg?raw=true) 
+![ubuntu-server-13](https://github.com/biohazel/tech-writing-illustrations/blob/master/ubuntu-server-13.jpg?raw=true)
+
+Em vez de anotar suas credenciais em um local que possa ser acessado por outros, considere o uso de um gerenciador de senhas seguro, que pode criptografar e armazenar senhas complexas, tornando desnecessário lembrar de cada uma delas. O Bitwarden é uma solução distribuída interessante, mas pesquise antes. 
 
 ![ubuntu-server-14](https://github.com/biohazel/tech-writing-illustrations/blob/master/ubuntu-server-14.jpg?raw=true) 
 
