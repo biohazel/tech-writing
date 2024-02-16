@@ -100,9 +100,11 @@ Here we will choose Continue.
 
 ![ubuntu-server-12](https://github.com/biohazel/tech-writing-illustrations/blob/master/ubuntu-server-12.jpg?raw=true) 
 
-Time to set the credentials for your node. I make it as simple as possible to remember later, but remember to note this down very well.
+Time to set your node's credentials. The name you choose in Your server's name is the hostname that will appear linked to its IP in the internal network.
 
 ![ubuntu-server-13](https://github.com/biohazel/tech-writing-illustrations/blob/master/ubuntu-server-13.jpg?raw=true) 
+
+Instead of writing down your credentials in a place that can be accessed by others, consider using a secure password manager, which can encrypt and store complex passwords, making it unnecessary to remember each one of them. Bitwarden is an interesting distributed solution, but do your research first.
 
 ![ubuntu-server-14](https://github.com/biohazel/tech-writing-illustrations/blob/master/ubuntu-server-14.jpg?raw=true) 
 
@@ -152,9 +154,15 @@ Since I've already had a server setup on this IP in the past, it's identifying a
 
 ![ubuntu-2](https://github.com/biohazel/tech-writing-illustrations/blob/master/ubuntu-2.png?raw=true) 
 
-So, we need to remove the old access key and create a new one. With the key removed, just try to log in again.
+So, we need to remove the old access key and create a new one. This is one way to remove the key directly. 
+ 
+ ```ssh-keygen -R 192.168.15.55```
 
-```ssh-keygen -f "/home/ubuntu/.ssh/known_hosts" -R "192.168.15.55```
+Or.
+
+ ```ssh-keygen -f "/home/ubuntu/.ssh/known_hosts" -R "192.168.15.55```
+
+With the key removed, just try to log in again.
 
 ![ubuntu-3](https://github.com/biohazel/tech-writing-illustrations/blob/master/ubuntu-3.png?raw=true) 
 
